@@ -341,8 +341,19 @@ console.log(checkMsg);
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
-//CODE HERE
+function frogECommerce(amountOfGold){
+  let totalFrogCounter = 0;
+  while (amountOfGold >= 3)
+  {
+      totalFrogCounter++;
+      amountOfGold -= 3;
+  }
 
+  return totalFrogCounter;
+}
+
+let totalFrogs = frogECommerce(15);
+console.log(totalFrogs);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
