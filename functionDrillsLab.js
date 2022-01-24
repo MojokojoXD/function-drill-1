@@ -183,7 +183,12 @@ console.log(nameGreeting);
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+const faveColorFinder = (color) =>{return (color.includes("red")) ? "red is a great colour" : 
+                                          (color.includes("green")) ? "green is a solid favourite color" :
+                                          (color.includes("black")) ? "so trendy" : "you need to evaluate your favourite color choice"}
+
+let colorRating = faveColorFinder("black");
+console.log(colorRating);
 
 
 ////////////////// PROBLEM 12 ////////////////////
