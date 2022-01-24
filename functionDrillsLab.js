@@ -217,9 +217,20 @@ printAllNames(namesArr);
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
+function thatsOdd(num)
+{
+  if (num % 2 === 1)
+  {
+    return "That is odd indeed!";
+  }
+  else 
+  {
+    return "That's not odd!";
+  }
+}
 
-
+let oddChecker = thatsOdd(2);
+console.log(oddChecker);
 ////////////////// PROBLEM 14 ////////////////////
 
 /*
