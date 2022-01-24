@@ -297,8 +297,8 @@ function theEliminator(contestantArr, loser){
   return contestantArr;
 }
 
-let checkArr = theEliminator(contestants, loser)
-console.log(checkArr);
+// let checkArr = theEliminator(contestants, loser)
+// console.log(checkArr);
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -307,7 +307,12 @@ let sampleString = "Hi, my name is Kylo."
   Invoke the function, passing in the sampleString (above).
 */
 
-//CODE HERE
+function uppercaser(strToConvert)
+{
+  console.log(strToConvert.toUpperCase());
+}
+
+//uppercaser(sampleString);
 
 
 ////////////////// PROBLEM 18 ////////////////////
