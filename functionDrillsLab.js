@@ -241,7 +241,7 @@ console.log(oddChecker);
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-const bestMovie = (movieTitle) =>{return `${movieTitle} is the best movie ever!`;}
+const bestMovie = (movieTitle) =>{movieTitle = String(movieTitle);return `${movieTitle} is the best movie ever!`;}
 
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -255,8 +255,25 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+function bigOrSmall(arr){
+  let newArr = [];
+  for (let i = 0; i < arr.length ; i++)
+  {
+    if (arr[i] <= 100)
+    {
+      newArr.push("Small");
+    }
+    else
+    {
+      newArr.push("Big");
+    }
+  }
 
+  return newArr;
+}
+
+let arrayEvaluator = bigOrSmall(bigOrSmallArray);
+//console.log(arrayEvaluator);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
