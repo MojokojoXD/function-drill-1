@@ -70,8 +70,9 @@ greeting("Jake");
 
 const compareNums = (num1,num2) => {return (num1 > num2) ? num1 : num2}
 
-// let test = compareNums(3,4);
-// console.log(test);
+//  let test = compareNums(3,3);
+//  console.log(test);
+
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Create a function called add that takes in two parameters 
@@ -80,8 +81,14 @@ const compareNums = (num1,num2) => {return (num1 > num2) ? num1 : num2}
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+function add(num1, num2){
+  num1 = parseInt(num1);
+  num2 = parseInt(num2);
 
+  return num1 + num2;
+}
+
+console.log(add("30",20));
 
 ////////////////// PROBLEM 7 ////////////////////
 
