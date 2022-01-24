@@ -49,9 +49,13 @@ function printName(name)
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting(name){
+ name = String(name);
+  console.log(`Hello, ${name}`);
+}
 
 
+greeting("Jake");
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
