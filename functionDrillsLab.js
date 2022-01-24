@@ -130,7 +130,7 @@ let arrow = 0;
 */
 
 const exclaimThree = (str) =>{return str.toUpperCase() + '!!!';}
-console.log(exclaimThree("I am happy"));
+console.log(exclaimThree("I am happy"))
 ////////////////// PROBLEM 9 ////////////////////
 
 /*
@@ -143,7 +143,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+let declaration = 0
 // expression
 
 
@@ -156,9 +156,23 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+function nameCheck(name){
+  name = String(name);
+  if(name.includes("Steven"))
+  {
+    return ("What is up Steven?");
+  }
+  else if(name.includes("Bryan"))
+  {
+    return "Hey Bryan!";
+  }
+  else{
+    return `Cool name, ${name}`;
+  }
+}
 
-
+let nameGreeting = nameCheck("Jake")
+console.log(nameGreeting);
 ////////////////// PROBLEM 11 ////////////////////
 /*
   Write a function called faveColorFinder that takes in one parameter called color (which will be a string).
