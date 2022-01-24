@@ -56,6 +56,7 @@ function greeting(name){
 
 
 greeting("Jake");
+
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
@@ -67,9 +68,10 @@ greeting("Jake");
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+const compareNums = (num1,num2) => {return (num1 > num2) ? num1 : num2}
 
-
+// let test = compareNums(3,4);
+// console.log(test);
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Create a function called add that takes in two parameters 
